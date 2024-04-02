@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Adamina", serif;
+    --primary-color: #0C1421;
+    --secondary-color: #313957;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    display: flex;
+    gap: 32px;
+    min-height: 100svh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px
+}
+
+
+
+body>* {
+    width: calc(calc(100% - 32px) / 2)
+}
+
+.img-contain {
+    background-image: url("../media/Art.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-login {
+    width: 54%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px
+}
+
+.section-login-intro {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.section-login-intro p:first-of-type {
+    color: var(--primary-color);
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.section-login-intro p:last-of-type {
+    color: var(--secondary-color);
+    font-size: 18px;
+    line-height: 28.8px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+section form .form-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+section form .form-contain label {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+section form .form-contain input {
+    border: 1px solid #D4D7E3;
+    background-color: #F7FBFF;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+input::placeholder {
+    color: #8897AD
+}
+
+form a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1E4AE9;
+    align-self: end;
+}
+
+form button {
+    background-color: #162D3A;
+    padding: 16px 0px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.social-signin {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.section-login-or {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.section-login-or .line {
+    height: 1px;
+    background-color: #CFDFE2;
+    flex-grow: 1;
+}
+
+.section-login-or .or {
+    font-size: 16px;
+    line-height: 16px;
+    color: #294957
+}
+
+.social-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 9px;
+    background: #F3F9FA;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.social-buttons p {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.signup p,
+.signup a {
+    font-size: 18px;
+    line-height: 28.8px;
+}
+
+.signup a {
+    text-decoration: none;
+    color: #1E4AE9
+}
+
+@media (max-width: 767px) {
+    body {
+        flex-direction: column-reverse;
+        gap: 27px;
+        padding: 24px
+    }
+
+    body>* {
+        width: 100%
+    }
+
+    .section-login {
+        width: 100%;
+    }
+
+    .img-contain {
+        height: 180px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .section-login {
+        gap: 24px
+    }
+
+    .section-login-intro {
+        gap: 16px
+    }
+
+    .section-login-intro p:first-of-type {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .section-login-intro p:last-of-type {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    section form {
+        gap: 16px
+    }
+
+    section form .form-contain label {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    section form .form-contain input {
+        font-size: 14px;
+        line-height: 14px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    form a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    form button {
+        padding: 14px 0
+    }
+
+    .signup p,
+    .signup a {
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+}

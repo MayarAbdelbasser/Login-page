@@ -1,0 +1,26 @@
+Git revert:
+    The git revert command can be considered an 'undo' type command, however, it is not a traditional undo operation.
+    Instead of removing the commit from the project history, it figures out how to invert the changes introduced by the commit and appends a new commit with the resulting inverse content.
+    This prevents Git from losing history, which is important for the integrity of your revision history and for reliable collaboration.
+    Reverting should be used when you want to apply the inverse of a commit from your project history.
+    This can be useful, for example, if you’re tracking down a bug and find that it was introduced by a single commit. Instead of manually going in, fixing it, and committing a new snapshot, you can use git revert to automatically do all of this for you.
+-------
+How to limit lines of text in CSS:
+    The easiest way to limit text to n lines is to use line-clamp.
+    N can be any positive number, but it will be two or three lines most of the time.
+    *To truncate only one line we can use:
+        .truncate {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        }
+    *Multiple lines truncation:
+        .truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+}
+    
